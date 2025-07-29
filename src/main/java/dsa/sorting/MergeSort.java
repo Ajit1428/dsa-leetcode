@@ -26,14 +26,10 @@ public class MergeSort {
 
         while(i < sizeLeftArr && j < sizeRightArr){
             if(leftArr[i] <= rightArr[j]){
-                nums[k] = leftArr[i];
-                i++;
+                nums[k++] = leftArr[i++];
             }else{
-                nums[k] = rightArr[j];
-                j++;
+                nums[k++] = rightArr[j++];
             }
-
-            k++;
         }
 
         // This ensures to copy the untouched or leftover elements
