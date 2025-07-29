@@ -1,14 +1,17 @@
 package leetcode;
 
-import leetcode.arrays.LongestCommonPrefix;
+import java.util.Arrays;
+import leetcode.arrays.MergeSortedArray;
 
 public class LeetCode {
     public static void main(String[] args){
-        String[] listOfString = new String[]{"flower","flow","flight"};
+        int[] nums1 = new int[]{1};
+        int[] nums2 = new int[]{};
+        int m = 1;
+        int n = 0;
 
-        LongestCommonPrefix prefix = new LongestCommonPrefix();
-        String result =  prefix.getLongestPrefix(listOfString);
-        System.out.println("Longest common prefix" + result);
-
+        MergeSortedArray merge = new MergeSortedArray();
+        int[] result = merge.getMergedArray(nums1, m, nums2, n);
+        System.out.println("Is valid parenthesis: "+ Arrays.toString(result));
     }
 }
